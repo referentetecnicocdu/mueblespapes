@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Muebles Papes | Muebles y Electrodomésticos</title>
+
+  <meta
+    name="description"
+    content="Muebles y electrodomésticos para tu hogar y oficina. Envíos a domicilio y atención personalizada."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- =======================================================
+       ENCABEZADO
+  ======================================================== -->
+
+  <header class="site-header">
+    <div class="container header-content">
+
+      <a href="#inicio" class="brand" aria-label="Muebles Papes">
+        <img src="img/logo_mp.jpg" alt="Muebles Papes" class="logo-img transition-soft " width="575" height="100">
+      </a>
+
+      <button
+        class="mobile-menu-button"
+        id="mobile-menu-button"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a class="active" href="#inicio">Inicio</a></li>
+          <li><a href="#productos">Muebles</a></li>
+          <li><a href="#productos">Electrodomésticos</a></li>
+          <li><a href="#banners">Oficina</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a class="header-icon" href="#" aria-label="Buscar">
+          ⌕
+        </a>
+
+        <a class="header-icon" href="#" aria-label="Carrito">
+          🛒
+        </a>
+
+        <a class="btn btn-primary" href="#contacto">
+          Contactanos
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="inicio">
+
+    <!-- =====================================================
+         CARRUSEL PRINCIPAL
+    ====================================================== -->
+
+    <section class="hero-section">
+      <div class="container">
+
+        <div class="hero-slider" id="hero-slider">
+
+          <article class="slide slide-1 active">
+            <div class="slide-content">
+              <p class="slide-kicker">Diseño para todos los días</p>
+              <h1>Tu espacio, tu estilo</h1>
+              <p>
+                Encuentra muebles y electrodomésticos pensados para convertir
+                cada rincón en un lugar especial.
+              </p>
+              <a class="btn btn-light" href="#productos">
+                Explorar productos
+              </a>
+            </div>
+          </article>
+
+          <article class="slide slide-2">
+            <div class="slide-content">
+              <p class="slide-kicker">Colección hogar</p>
+              <h1>Comodidad que inspira</h1>
+              <p>
+                Diseños funcionales, materiales seleccionados y detalles que
+                hacen la diferencia.
+              </p>
+              <a class="btn btn-light" href="#productos">
+                Ver colección
+              </a>
+            </div>
+          </article>
+
+          <article class="slide slide-3">
+            <div class="slide-content">
+              <p class="slide-kicker">Espacios de trabajo</p>
+              <h1>Trabaja con más comodidad</h1>
+              <p>
+                Soluciones para oficinas modernas, prácticas y llenas de
+                personalidad.
+              </p>
+              <a class="btn btn-light" href="#banners">
+                Conocer soluciones
+              </a>
+            </div>
+          </article>
+
+          <article class="slide slide-4">
+            <div class="slide-content">
+              <p class="slide-kicker">Cocina y hogar</p>
+              <h1>Todo comienza en casa</h1>
+              <p>
+                Electrodomésticos y accesorios para disfrutar mejor tus
+                momentos cotidianos.
+              </p>
+              <a class="btn btn-light" href="#productos">
+                Comprar ahora
+              </a>
+            </div>
+          </article>
+
+          <article class="slide slide-5">
+            <div class="slide-content">
+              <p class="slide-kicker">Nuevas tendencias</p>
+              <h1>Renueva tus ambientes</h1>
+              <p>
+                Descubre propuestas contemporáneas para crear espacios únicos.
+              </p>
+              <a class="btn btn-light" href="#marcas">
+                Ver novedades
+              </a>
+            </div>
+          </article>
+
+          <button
+            class="slider-arrow prev"
+            id="prev-slide"
+            aria-label="Imagen anterior"
+          >
+            ‹
+          </button>
+
+          <button
+            class="slider-arrow next"
+            id="next-slide"
+            aria-label="Imagen siguiente"
+          >
+            ›
+          </button>
+
+          <div class="slider-dots" id="slider-dots">
+            <button class="slider-dot active" data-slide="0" aria-label="Ir a imagen 1"></button>
+            <button class="slider-dot" data-slide="1" aria-label="Ir a imagen 2"></button>
+            <button class="slider-dot" data-slide="2" aria-label="Ir a imagen 3"></button>
+            <button class="slider-dot" data-slide="3" aria-label="Ir a imagen 4"></button>
+            <button class="slider-dot" data-slide="4" aria-label="Ir a imagen 5"></button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================
+         BENEFICIOS
+    ====================================================== -->
+
+    <section class="benefits-section">
+      <div class="container">
+
+        <div class="benefits-grid">
+
+          <article class="benefit-card">
+            <div class="benefit-icon">🚚</div>
+            <div>
+              <h3>Envíos a domicilio</h3>
+              <p>Recibe tus productos donde estés.</p>
+            </div>
+          </article>
+
+          <article class="benefit-card">
+            <div class="benefit-icon">💳</div>
+            <div>
+              <h3>Tarjetas de crédito</h3>
+              <p>Compra de forma segura y sencilla.</p>
+            </div>
+          </article>
+
+          <article class="benefit-card">
+            <div class="benefit-icon">💬</div>
+            <div>
+              <h3>Atención personalizada</h3>
+              <p>Te ayudamos a elegir lo que necesitas.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         PRODUCTOS DESTACADOS
+    ====================================================== -->
+
+    <section class="section products-section" id="productos">
+      <div class="container">
+
+        <div class="section-header">
+          <div>
+            <p class="section-kicker">Nuestra selección</p>
+            <h2 class="section-title">Productos destacados</h2>
+            <p class="section-description">
+              Piezas funcionales y electrodomésticos seleccionados para
+              acompañar tu estilo de vida.
+            </p>
+          </div>
+
+          <a href="#" class="section-link">Ver todos los productos →</a>
+        </div>
+
+        <div class="products-grid">
+
+          <article class="product-card">
+            <div class="product-image">
+              <span class="product-tag">Más vendido</span>
+              <img
+                src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=85"
+                alt="Sofá modular color beige"
+              />
+            </div>
+
+            <div class="product-content">
+              <span class="product-category">Muebles</span>
+              <h3 class="product-title">Sofá Modular Nube</h3>
+              <p class="product-description">
+                Comodidad y diseño para tu sala de estar.
+              </p>
+
+              <div class="product-footer">
+                <span class="product-price">$459.900</span>
+                <button class="add-product" aria-label="Agregar sofá al carrito">
+                  +
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">
+              <span class="product-tag">Nuevo</span>
+              <img
+                src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=85"
+                alt="Cocina moderna con electrodomésticos"
+              />
+            </div>
+
+            <div class="product-content">
+              <span class="product-category">Cocina</span>
+              <h3 class="product-title">Cocina Essential Pro</h3>
+              <p class="product-description">
+                Tecnología y estilo para cocinar todos los días.
+              </p>
+
+              <div class="product-footer">
+                <span class="product-price">$829.900</span>
+                <button class="add-product" aria-label="Agregar cocina al carrito">
+                  +
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">
+              <span class="product-tag">Oferta</span>
+              <img
+                src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=800&q=85"
+                alt="Escritorio de madera para oficina"
+              />
+            </div>
+
+            <div class="product-content">
+              <span class="product-category">Oficina</span>
+              <h3 class="product-title">Escritorio Línea Norte</h3>
+              <p class="product-description">
+                Un espacio de trabajo cómodo y organizado.
+              </p>
+
+              <div class="product-footer">
+                <span class="product-price">$219.900</span>
+                <button class="add-product" aria-label="Agregar escritorio al carrito">
+                  +
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">
+              <span class="product-tag">Destacado</span>
+              <img
+                src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=85"
+                alt="Silla tapizada color terracota"
+              />
+            </div>
+
+            <div class="product-content">
+              <span class="product-category">Decoración</span>
+              <h3 class="product-title">Silla Aura</h3>
+              <p class="product-description">
+                Un acento de color para tus ambientes.
+              </p>
+
+              <div class="product-footer">
+                <span class="product-price">$119.900</span>
+                <button class="add-product" aria-label="Agregar silla al carrito">
+                  +
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         BANNERS HOME
+    ====================================================== -->
+
+    <section class="section" id="banners">
+      <div class="container">
+
+        <div class="section-header">
+          <div>
+            <p class="section-kicker">Inspiración</p>
+            <h2 class="section-title">Soluciones para tus espacios</h2>
+            <p class="section-description">
+              Ideas para crear ambientes acogedores, prácticos y con mucha
+              personalidad.
+            </p>
+          </div>
+        </div>
+
+        <div class="banners-grid">
+
+          <article class="home-banner home-banner-1">
+            <div class="home-banner-content">
+              <h3>Ambientes que cuentan historias</h3>
+              <p>Diseña una casa que hable de ti.</p>
+              <a href="#" class="btn btn-light">Descubrir más</a>
+            </div>
+          </article>
+
+          <article class="home-banner home-banner-2">
+            <div class="home-banner-content">
+              <h3>Cocinas para disfrutar</h3>
+              <p>Funcionalidad con estilo.</p>
+              <a href="#" class="btn btn-light">Ver cocina</a>
+            </div>
+          </article>
+
+          <article class="home-banner home-banner-3">
+            <div class="home-banner-content">
+              <h3>Oficinas con propósito</h3>
+              <p>Trabaja mejor, vive mejor.</p>
+              <a href="#" class="btn btn-light">Ver oficina</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         MARCAS
+    ====================================================== -->
+
+    <section class="section brands-section" id="marcas">
+      <div class="container">
+
+        <div class="section-header">
+          <div>
+            <p class="section-kicker">Calidad garantizada</p>
+            <h2 class="section-title">Marcas destacadas</h2>
+            <p class="section-description">
+              Trabajamos con marcas seleccionadas para ofrecerte diseño,
+              calidad y respaldo.
+            </p>
+          </div>
+        </div>
+
+        <div class="brands-grid">
+          <div class="brand-item">
+            <div>
+              NORD
+              <small>HOME</small>
+            </div>
+          </div>
+
+          <div class="brand-item">
+            <div>
+              LUMEN
+              <small>STUDIO</small>
+            </div>
+          </div>
+
+          <div class="brand-item">
+            <div>
+              ARTE
+              <small>CASA</small>
+            </div>
+          </div>
+
+          <div class="brand-item">
+            <div>
+              FORMA
+              <small>DESIGN</small>
+            </div>
+          </div>
+
+          <div class="brand-item">
+            <div>
+              NOVA
+              <small>TECH</small>
+            </div>
+          </div>
+
+          <div class="brand-item">
+            <div>
+              CASA
+              <small>LINE</small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =======================================================
+       FOOTER
+  ======================================================== -->
+
+  <footer class="site-footer" id="contacto">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="#inicio" class="brand">
+            <img src="img/logo_mp.jpg" alt="Muebles Papes" class="logo-img transition-soft " width="575" height="100">
+          </a>
+
+          <p>
+            Muebles y electrodomésticos para crear espacios cómodos,
+            funcionales y llenos de estilo.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Categorías</h3>
+
+          <ul>
+            <li><a href="#productos">Muebles para el hogar</a></li>
+            <li><a href="#productos">Electrodomésticos</a></li>
+            <li><a href="#productos">Oficina</a></li>
+            <li><a href="#productos">Decoración</a></li>
+            <li><a href="#productos">Novedades</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contáctanos</h3>
+
+          <div class="footer-contact">
+            <a href="mailto:hola@casanova.com">
+              hola@casanova.com
+            </a>
+
+            <a href="tel:+5491100000000">
+              +54 9 11 0000 0000
+            </a>
+
+            <span>
+              Lunes a viernes, de 9:00 a 18:00
+            </span>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>Sigamos conectados</h3>
+
+          <p class="footer-contact">
+            Síguenos en nuestras redes sociales.
+          </p>
+
+          <div class="social-links">
+
+            <!-- Instagram -->
+            <a
+              class="social-link"
+              href="#"
+              aria-label="Instagram"
+            >
+              <svg viewBox="0 0 24 24">
+                <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+                <circle cx="12" cy="12" r="4"></circle>
+                <circle cx="17.5" cy="6.5" r="0.7"></circle>
+              </svg>
+            </a>
+
+            <!-- Facebook -->
+            <a
+              class="social-link facebook"
+              href="#"
+              aria-label="Facebook"
+            >
+              <svg viewBox="0 0 24 24">
+                <path d="M14.5 21v-8h2.7l.4-3h-3.1V8.1c0-.9.3-1.6 1.7-1.6h1.8V3.8c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3V10H8.5v3h2.8v8h3.2Z"></path>
+              </svg>
+            </a>
+
+            <!-- WhatsApp -->
+            <a
+              class="social-link"
+              href="#"
+              aria-label="WhatsApp"
+            >
+              <svg viewBox="0 0 24 24">
+                <path d="M20.5 11.4a8.4 8.4 0 0 1-12.3 7.4L3.5 20l1.2-4.5a8.4 8.4 0 1 1 15.8-4.1Z"></path>
+                <path d="M8.2 8.4c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.5.4l.7 1.6c.1.2.1.4-.1.6l-.5.6c-.1.1-.1.3 0 .4.4.7 1 1.3 1.8 1.7.2.1.4.1.5-.1l.6-.7c.2-.2.3-.2.6-.1l1.6.8c.2.1.3.3.2.6l-.3.8c-.2.5-.9.8-1.4.8-1.1-.1-2.6-.9-3.8-2-1-.9-1.7-2-2-2.8-.2-.6-.1-1.3.4-1.8Z"></path>
+              </svg>
+            </a>
+
+            <!-- TikTok -->
+            <a
+              class="social-link"
+              href="#"
+              aria-label="TikTok"
+            >
+              <svg viewBox="0 0 24 24">
+                <path d="M15 4c.3 1.8 1.3 3.1 3 3.7v2.5a8 8 0 0 1-3-.9v5.1a5.1 5.1 0 1 1-4.4-5.1v2.6a2.5 2.5 0 1 0 1.8 2.4V4H15Z"></path>
+              </svg>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        © 2026 Muebles Papes. Todos los derechos reservados.
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =======================================================
+       JAVASCRIPT DEL CARRUSEL Y MENÚ MÓVIL
+  ======================================================== -->
+
+  <script>
+    const slides = document.querySelectorAll(".slide");
+    const dots = document.querySelectorAll(".slider-dot");
+
+    const prevButton = document.getElementById("prev-slide");
+    const nextButton = document.getElementById("next-slide");
+
+    const mobileMenuButton = document.getElementById("mobile-menu-button");
+    const mainNav = document.getElementById("main-nav");
+
+    let currentSlide = 0;
+    let autoplayInterval;
+
+    function showSlide(index) {
+      slides.forEach((slide, slideIndex) => {
+        slide.classList.toggle("active", slideIndex === index);
+      });
+
+      dots.forEach((dot, dotIndex) => {
+        dot.classList.toggle("active", dotIndex === index);
+      });
+
+      currentSlide = index;
+    }
+
+    function nextSlide() {
+      const nextIndex = (currentSlide + 1) % slides.length;
+      showSlide(nextIndex);
+    }
+
+    function previousSlide() {
+      const previousIndex =
+        (currentSlide - 1 + slides.length) % slides.length;
+
+      showSlide(previousIndex);
+    }
+
+    function startAutoplay() {
+      autoplayInterval = setInterval(nextSlide, 5500);
+    }
+
+    function stopAutoplay() {
+      clearInterval(autoplayInterval);
+    }
+
+    nextButton.addEventListener("click", () => {
+      nextSlide();
+      stopAutoplay();
+      startAutoplay();
+    });
+
+    prevButton.addEventListener("click", () => {
+      previousSlide();
+      stopAutoplay();
+      startAutoplay();
+    });
+
+    dots.forEach((dot, index) => {
+      dot.addEventListener("click", () => {
+        showSlide(index);
+        stopAutoplay();
+        startAutoplay();
+      });
+    });
+
+    const slider = document.getElementById("hero-slider");
+
+    slider.addEventListener("mouseenter", stopAutoplay);
+    slider.addEventListener("mouseleave", startAutoplay);
+
+    mobileMenuButton.addEventListener("click", () => {
+      const isOpen = mainNav.classList.toggle("open");
+
+      mobileMenuButton.setAttribute("aria-expanded", isOpen);
+      mobileMenuButton.textContent = isOpen ? "×" : "☰";
+    });
+
+    document.querySelectorAll(".main-nav a").forEach((link) => {
+      link.addEventListener("click", () => {
+        mainNav.classList.remove("open");
+        mobileMenuButton.setAttribute("aria-expanded", "false");
+        mobileMenuButton.textContent = "☰";
+      });
+    });
+
+    startAutoplay();
+  </script>
+
+</body>
+</html>
